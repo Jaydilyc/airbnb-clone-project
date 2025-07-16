@@ -159,7 +159,58 @@ Stores records of payments for bookings.
 
 ### 📈 Coming Soon:
 An ERD (Entity Relationship Diagram) will be added to visually represent these relationships.
+...
 
+## 🚀 Feature Breakdown
+
+The Airbnb Clone Project includes a range of features that replicate the functionality of the original Airbnb platform. These features are designed to provide a seamless experience for both hosts and guests while offering developers hands-on experience with backend architecture and API development.
+
+---
+
+### 🧑‍💼 User Management
+Allows users to register, log in, and manage their profiles. The system differentiates between hosts and guests, ensuring secure access and personalized functionality across the platform.
+
+---
+
+### 🏘️ Property Management
+Enables hosts to list, update, and delete properties. Each listing includes details such as location, pricing, description, and images. This feature allows hosts to manage their offerings dynamically.
+
+---
+
+### 📅 Booking System
+Allows guests to book available properties by selecting check-in and check-out dates. The system handles conflict detection, calculates total cost, and updates availability accordingly.
+
+---
+
+### 💳 Payment Processing
+Handles secure recording of payment transactions associated with bookings. It tracks amount, method, and payment dates, providing financial traceability and future integration points for real payment gateways.
+
+---
+
+### ⭐ Reviews & Ratings
+Enables guests to leave feedback on properties they have stayed in. This feature promotes trust and quality control by allowing users to rate their experience and share comments.
+
+---
+
+### 🔐 Authentication & Authorization
+Implements secure user authentication (e.g., password hashing, JWT tokens) and role-based access control to ensure users can only access appropriate resources.
+
+---
+
+### 📑 API Documentation
+Provides a clear and interactive interface for developers to explore and test API endpoints. Using Swagger or similar tools, the documentation enhances maintainability and onboarding for contributors.
+
+---
+
+### ⚙️ CI/CD Pipeline Integration
+Automates testing, building, and deployment workflows using GitHub Actions. This ensures consistent quality, speeds up iteration, and reduces the risk of manual deployment errors.
+
+---
+
+### 🐳 Dockerized Environment (Optional)
+Packages the entire app in Docker containers for seamless local development and deployment. This ensures consistency across different machines and environments.
+
+---
 
 
 ## 📂 Project Structure (To be updated as we build)
