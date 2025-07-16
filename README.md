@@ -77,5 +77,90 @@ The Airbnb Clone Project leverages a modern technology stack to simulate a real-
 
 ---
 
+## 🗄️ Database Design
+
+This project uses a relational database (MySQL) to model real-world entities such as users, properties, bookings, reviews, and payments. The database is designed using normalized structures to ensure scalability, data integrity, and ease of query.
+
+### 🔑 Key Entities & Attributes
+
+Below are the primary entities and their essential fields:
+
+---
+
+### 1. **User**
+Represents the people who use the platform to either host or book properties.
+
+- `id` (Primary Key)
+- `username`
+- `email`
+- `password_hash`
+- `is_host` (Boolean to differentiate guests from hosts)
+
+---
+
+### 2. **Property**
+Represents the properties listed by hosts on the platform.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key → User)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+
+---
+
+### 3. **Booking**
+Represents a reservation made by a user for a property.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key → User)
+- `property_id` (Foreign Key → Property)
+- `check_in_date`
+- `check_out_date`
+- `total_price`
+
+---
+
+### 4. **Review**
+Captures feedback left by users after staying at a property.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key → User)
+- `property_id` (Foreign Key → Property)
+- `rating` (Integer)
+- `comment`
+
+---
+
+### 5. **Payment**
+Stores records of payments for bookings.
+
+- `id` (Primary Key)
+- `booking_id` (Foreign Key → Booking)
+- `payment_date`
+- `amount`
+- `payment_method`
+
+---
+
+### 🔗 Entity Relationships
+
+- **A User** can own **multiple Properties**.  
+- **A User** can make **multiple Bookings** for different Properties.  
+- **A Property** can have **many Reviews** and **many Bookings**.  
+- **A Booking** is associated with **one Property** and **one User**.  
+- **A Booking** has **one Payment**.  
+- **A User** can write **many Reviews** for different Properties.
+
+> 📌 This relational structure ensures that every data point can be traced back to the source while enabling powerful queries for features like listing search, user history, and analytics.
+
+---
+
+### 📈 Coming Soon:
+An ERD (Entity Relationship Diagram) will be added to visually represent these relationships.
+
+
+
 ## 📂 Project Structure (To be updated as we build)
 
