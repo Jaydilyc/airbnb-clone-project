@@ -56,5 +56,26 @@ This project follows a collaborative, real-world development model. The followin
 
 ---
 
+## 🛠️ Technology Stack
+
+The Airbnb Clone Project leverages a modern technology stack to simulate a real-world, scalable backend system. Each technology plays a vital role in ensuring the application is robust, maintainable, and secure.
+
+| **Technology** | **Purpose in the Project** |
+|----------------|-----------------------------|
+| **Django** | A high-level Python web framework that enables rapid development of secure and maintainable backend systems. Used to build the core server logic and APIs. |
+| **Django REST Framework (DRF)** | An extension of Django that simplifies the creation of RESTful APIs with features like serialization, authentication, and permissions. |
+| **MySQL** | A relational database system used to store structured data such as users, listings, bookings, and reviews. It supports complex queries and relational data modeling. |
+| **GraphQL** (optional) | A query language for APIs and runtime for executing those queries. It allows clients to request exactly the data they need, promoting efficiency and flexibility. |
+| **Docker** | A containerization platform that ensures the application runs consistently across different environments. It packages the app and its dependencies into portable containers. |
+| **Git & GitHub** | Git is a version control system used to track code changes, while GitHub hosts the repository and supports collaboration through issues, pull requests, and actions. |
+| **GitHub Actions** | A CI/CD automation tool within GitHub used to automate testing, deployment, and other development workflows. |
+| **Swagger / OpenAPI** | Tools used to document and visualize RESTful APIs. Helps developers and users understand and test API endpoints. |
+| **Markdown** | A lightweight markup language used to format documentation files such as `README.md`, API references, and contribution guides. |
+
+> *Note: Additional tools or frameworks may be introduced as the project evolves to meet advanced functionality or deployment needs.*
+
+
+---
+
 ## 📂 Project Structure (To be updated as we build)
 
