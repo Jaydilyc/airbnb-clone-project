@@ -157,9 +157,6 @@ Stores records of payments for bookings.
 
 ---
 
-### 📈 Coming Soon:
-An ERD (Entity Relationship Diagram) will be added to visually represent these relationships.
-...
 
 ## 🚀 Feature Breakdown
 
@@ -212,6 +209,63 @@ Packages the entire app in Docker containers for seamless local development and 
 
 ---
 
+## 🔐 API Security
 
-## 📂 Project Structure (To be updated as we build)
+Securing the backend API is critical to protecting user data, maintaining trust, and ensuring safe and reliable functionality. This project integrates essential security measures at various layers to prevent unauthorized access, data breaches, and abuse.
+
+---
+
+### 🔑 Authentication
+We will implement user authentication using JWT (JSON Web Tokens) to ensure that only verified users can access protected endpoints. This is crucial for verifying user identity and maintaining session security.
+
+**Why it's important**:  
+Prevents unauthorized users from accessing personal data or making bookings under another user's account.
+
+---
+
+### 🛂 Authorization
+Role-based access control will be enforced to ensure that users can only perform actions permitted for their role (e.g., only hosts can create listings, only guests can make bookings).
+
+**Why it's important**:  
+Protects critical operations by ensuring users don’t access or modify resources they don’t own.
+
+---
+
+### ⚠️ Rate Limiting
+We will implement rate limiting to prevent abuse of the API (e.g., brute force login attacks, spamming endpoints).
+
+**Why it's important**:  
+Helps maintain service availability and protects the system from denial-of-service (DoS) attacks.
+
+---
+
+### 📦 Input Validation & Sanitization
+All incoming data will be validated and sanitized to avoid injection attacks such as SQL injection or cross-site scripting (XSS).
+
+**Why it's important**:  
+Prevents malicious data from compromising the database or affecting application behavior.
+
+---
+
+### 🔒 HTTPS (Production Deployment)
+All data exchanged between the client and server will be encrypted using HTTPS in production environments.
+
+**Why it's important**:  
+Protects sensitive information such as login credentials and payment data from being intercepted in transit.
+
+---
+
+### 🧪 Security Testing
+Basic security tests (e.g., checking auth headers, token expiration, and role access) will be incorporated into our testing strategy.
+
+**Why it's important**:  
+Ensures the security mechanisms work as expected and are not bypassed accidentally during updates.
+
+---
+
+> These practices collectively protect the integrity, confidentiality, and availability of the system and its data, forming a solid foundation for secure application development.
+
+## 📈 Featueres Coming Soon:
+...An ERD (Entity Relationship Diagram) will be added to visually represent these relationships.
+...Project Structure (To be updated as we build)
 
