@@ -265,6 +265,45 @@ Ensures the security mechanisms work as expected and are not bypassed accidental
 
 > These practices collectively protect the integrity, confidentiality, and availability of the system and its data, forming a solid foundation for secure application development.
 
+
+## ⚙️ CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) is a critical part of modern software development. It ensures that code changes are automatically built, tested, and deployed with minimal human intervention, promoting faster delivery, higher code quality, and early detection of bugs.
+
+---
+
+### 🧪 Continuous Integration (CI)
+CI automates the process of testing and building the application every time a change is pushed to the repository. This helps ensure that the new code doesn’t break existing functionality and adheres to defined coding standards.
+
+**Benefits**:
+- Early bug detection
+- Consistent code quality
+- Automated feedback for developers
+
+---
+
+### 🚀 Continuous Deployment (CD)
+CD automates the deployment of tested code to staging or production environments. It minimizes manual errors and allows for frequent and reliable software releases.
+
+**Benefits**:
+- Faster time-to-production
+- Reduced deployment risks
+- Easier rollback in case of issues
+
+---
+
+### 🧰 Tools We Use
+
+| Tool | Purpose |
+|------|---------|
+| **GitHub Actions** | Automates testing, linting, and deployment workflows directly from GitHub. |
+| **Docker** | Ensures the application runs in consistent environments across development, testing, and production. |
+| **Heroku / Render / AWS (optional)** | Used for hosting and deploying the application in production. |
+
+---
+
+> By integrating CI/CD pipelines, the Airbnb Clone Project benefits from streamlined development cycles, fewer bugs in production, and a more reliable, maintainable codebase.
+
 ## 📈 Featueres Coming Soon:
 ...An ERD (Entity Relationship Diagram) will be added to visually represent these relationships.
 ...Project Structure (To be updated as we build)
